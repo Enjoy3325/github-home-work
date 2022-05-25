@@ -7,8 +7,15 @@
 .body {
   background: #ffffff;
   color: #757575;
-  font-family: 'Roboto';
   font-size: 14px;
+}
+li .h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
 }
 
 /* основной цвет текста #757575;  */
@@ -52,8 +59,6 @@
 .title-list {
 }
 .link {
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -88,6 +93,7 @@
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  margin: 30px 700px 200px 700px;
 }
 .issue:hover,
 .issue:focus {
@@ -109,8 +115,6 @@
   top: 280px;
   color: #ffffff;
   padding: 200px 452px 30px 452px;
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
@@ -145,7 +149,7 @@ ul {
 /* Кнопка раздела "Веб-сайты" */
 .web-sites {
   background: #f5f4fa;
-  color: 212121;
+  color: var(--title-text-color);
   width: 128px;
   height: 38px;
   left: 576px;
@@ -159,7 +163,7 @@ ul {
 /* Кнопка раздела "Приложение" */
 .applications {
   background: #f5f4fa;
-  color: 212121;
+  color: var(--title-text-color);
   width: 145px;
   height: 38px;
   left: 712px;
@@ -173,7 +177,7 @@ ul {
 /* Кнопка раздела "Дизайн" */
 .design {
   background: #f5f4fa;
-  color: 212121;
+  color: var(--title-text-color);
   width: 103px;
   height: 38px;
   left: 865px;
@@ -187,7 +191,7 @@ ul {
 /* Кнопка раздела "Маркетинг" */
 .marketing {
   background: #f5f4fa;
-  color: 212121;
+  color: var(--title-text-color);
   width: 130px;
   height: 38px;
   left: 976px;
