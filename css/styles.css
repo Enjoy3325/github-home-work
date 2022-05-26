@@ -13,7 +13,7 @@
 li .h3 {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.142em;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
@@ -33,10 +33,10 @@ li .h3 {
   height: 31px;
   left: 215px;
   top: 24px;
-  font-family: 'Raleway';
+  font-family: "Ralewa";
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.192em;
+ s 1.19;
   margin: 24px 93px 25px 215px;
 }
 .logo:hover,
@@ -62,7 +62,7 @@ li .h3 {
 .link {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.142em;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
 }
@@ -86,7 +86,7 @@ li .h3 {
   cursor: pointer;
   color: #ffffff;
   border-radius: 4px;
-  line-height: 1.875em;
+  line-height: 1.87;
   height: 50px;
   left: 700px;
   top: 430px;
@@ -139,7 +139,7 @@ ul {
 .all {
   background: #2196f3;
   color: #ffffff;
-  line-height: 1.625em;
+  line-height: 1.62;
   height: 38px;
   left: 495px;
   top: 174px;
