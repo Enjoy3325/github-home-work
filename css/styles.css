@@ -2,63 +2,72 @@
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
+  --line-color: #ececec;
+  --white-color: #ffffff;
+  --hover-button-color: #188ce8;
+  --footer-contacts-color: rgba(255, 255, 255, 0.6);
+  --fluoric-background-color: #2f303a;
+  --fone-comand-color: #f5f4fa;
+  --logo-studio-color: #000000;
 }
-
-.body {
-  background: #ffffff;
-  color: #757575;
-  font-size: 14px;
-  font-family: 'Roboto';
-}
-li .h3 {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #212121;
-}
-
+/* ---------------------------------------------------------------СЕКЦИИ ЦВЕТОВ var------------------------------------------------- */
+/* Ховер для кнопки  #188ce8 */
 /* основной цвет текста #757575;  */
 /* второстепенный цвет текста #212121; */
 /* белый цвет #ffffff; */
 /* цвет фона вторичный #2F303A; */
 /* акцент #2196F3; */
 /* цвет контакты футер color: rgba(255, 255, 255, 0.6); */
+/* Цвет линия #ececec */
+/*Фон команда #F5F4FA */
+/* Часть цвета лого Web #000000 */
 
-/* Логотип */
+body {
+  background-color: var(--white-color);
+  color: var(--primary-text-color);
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
+}
+/* -------------------------------------------------------------СПРЯТАННЫЕ ЗАГОЛОВКИ h2,h1---------------------------------------------------------- */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* --------------------------------------------------------------------ЛОГОТИП------------------------------------------------------------------ */
 .logo {
-  color: #2196f3;
-  width: 145px;
-  height: 31px;
-  left: 215px;
-  top: 24px;
-  font-family: "Ralewa";
+  color: var(--accent-color);
+  font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
- s 1.19;
-  margin: 24px 93px 25px 215px;
+  text-decoration: none;
+  line-height: 1.19;
 }
 .logo:hover,
 .logo:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .logo-footer:hover,
 .logo-footer:focus {
-  color: #2196f3;
-}
-
-.span-footer {
-  color: #ffffff;
+  color: var(--accent-color);
 }
 .logo-span {
-  color: #000000;
+  color: var(--logo-studio-color);
 }
-/* Секции var(--primary-text-color) */
-.title-list {
-  cursor: pointer;
+.span-footer {
+  color: var(--white-color);
 }
+
 .link {
   font-weight: 500;
   font-size: 14px;
@@ -67,233 +76,219 @@ li .h3 {
   color: var(--title-text-color);
 }
 .link.current {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .link:hover,
 .link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
+/* -------------------------------------------------------------------ГЕРОЙ------------------------------------------------------------ */
+.hero {
+  background: var(--fluoric-background-color);
+}
+
+.title-list h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--title-text-color);
+}
+
 .ul-site {
-  color: #212121;
+  color: var(--title-text-color);
 }
 .ul-site:hover,
 .ul-site:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
-/* Кнопка "Заказать услугу"*/
+/* ---------------------------------------------------------------КНОПКА ЗАКАЗАТЬ УСЛУГУ------------------------------------------------ */
 .issue {
-  background: #2196f3;
+  background: var(--accent-color);
   cursor: pointer;
-  color: #ffffff;
+  color: var(--white-color);
   border-radius: 4px;
   line-height: 1.87;
-  height: 50px;
-  left: 700px;
-  top: 430px;
   display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  margin: 30px 700px 200px 700px;
 }
 .issue:hover,
 .issue:focus {
-  background: #2196f3;
-}
-
-.hero-div {
-  width: 1600px;
-  height: 600px;
-  left: 0px;
-  top: 80px;
-  background: #2f303a;
+  background: var(--hover-button-color);
 }
 
 .decision {
-  width: 696px;
-  height: 120px;
-  left: 452px;
-  top: 280px;
-  color: #ffffff;
-  padding: 200px 452px 30px 452px;
+  color: var(--white-color);
   font-weight: 900;
-  font-size: 44px;
+  font-size: 1.36;
   line-height: 60px;
   text-align: center;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
+}
+/* -----------------------------------------------------------------ЧЕМ МЫ ЗАНИМАЕМСЯ------------------------------------------------------- */
+.section h2 {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+/* -------------------------------------------------------------------НАША КОМАНДА------------------------------------------------ */
+.title-list-employee {
+  background: var(--white-color);
+}
+.title-list-employee.h2 {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
 }
 
 ul {
   list-style: none;
 }
-/* display: flex; align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
-    color: #FFFFFF;
-    padding: 10px 32px;
-    margin: 40px 732px 210px 732px;*/
 
-/* Кнопка раздел "Все" */
+/* -------------------------------------------------------------------КНОПКА РАЗДЕЛ "ВСЕ"---------------------------------------------- */
 
 .all {
-  background: #2196f3;
-  color: #ffffff;
+  background: var(--fone-comand-color);
+  color: var(--title-text-color);
   line-height: 1.62;
-  height: 38px;
-  left: 495px;
-  top: 174px;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   width: 73px;
 }
-/* Кнопка раздела "Веб-сайты" */
+.all:hover,
+.all:focus {
+  background: var(--accent-color);
+  color: var(--white-color);
+}
+/* -----------------------------------------------------------------КНОПКА РАЗДЕЛ "ВЕБ-САЙТЫ"---------------------------------------------- */
 .web-sites {
-  background: #f5f4fa;
+  background: var(--fone-comand-color);
   color: var(--title-text-color);
-  width: 128px;
-  height: 38px;
-  left: 576px;
-  top: 174px;
   border-radius: 4px;
   cursor: pointer;
+  line-height: 1.62;
 }
 .web-sites:hover,
 .web-sites:focus {
-  color: #2196f3;
+  background: var(--accent-color);
+  color: var(--white-color);
 }
 
-/* Кнопка раздела "Приложение" */
+/* ------------------------------------------------------------------КНОПКА РАЗДЕЛ "ПРИЛОЖЕНИЕ"--------------------------------------------------- */
 .applications {
-  background: #f5f4fa;
+  background: var(--fone-comand-color);
   color: var(--title-text-color);
-  width: 145px;
-  height: 38px;
-  left: 712px;
-  top: 174px;
   border-radius: 4px;
   cursor: pointer;
+  line-height: 1.62;
 }
 .applications:hover,
 .applications:focus {
-  color: #2196f3;
+  background: var(--accent-color);
+  color: var(--white-color);
 }
-/* Кнопка раздела "Дизайн" */
+/* -----------------------------------------------------------------КНОПКА РАЗДЕЛ "ДИЗАЙН"-------------------------------------------------------- */
 .design {
-  background: #f5f4fa;
+  background: var(--fone-comand-color);
   color: var(--title-text-color);
-  width: 103px;
-  height: 38px;
-  left: 865px;
-  top: 174px;
   border-radius: 4px;
   cursor: pointer;
+  line-height: 1.62;
 }
 .design:hover,
 .design:focus {
-  color: #2196f3;
+  background: var(--accent-color);
+  color: var(--white-color);
 }
-/* Кнопка раздела "Маркетинг" */
+/* ----------------------------------------------------------------КНОПКА РАЗДЕЛ "МАРКЕТИНГ"---------------------------------------------------------- */
 .marketing {
-  background: #f5f4fa;
+  background: var(--fone-comand-color);
   color: var(--title-text-color);
-  width: 130px;
-  height: 38px;
-  left: 976px;
-  top: 174px;
   border-radius: 4px;
   cursor: pointer;
+  line-height: 1.62;
 }
 .marketing:hover,
 .marketing:focus {
-  color: #2196f3;
+  background: var(--accent-color);
+  color: var(--white-color);
 }
-.img-one {
-  text-align: center;
-  height: 294px;
-  left: 215px;
-  top: 1061px;
+/* ----------------------------------------------------------------------ПРОЕКТЫ------------------------------------------------------------------- */
+.list-projects.h2 {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
-.img-two {
-  height: 294px;
-  left: 215px;
-  top: 1061px;
-}
-.img-three {
-  height: 294px;
-  left: 215px;
-  top: 1061px;
-}
+
 a {
-  color: #212121;
+  color: var(--title-text-color);
+  text-decoration: none;
 }
 p {
-  color: #757575;
+  color: var(--primary-text-color);
 }
+/* -----------------------------------------------------------------------КОНТАКТЫ------------------------------------------------------------------------------- */
 .contacts {
-  color: #757575;
+  color: var(--primary-text-color);
 }
 
 .tel:hover,
 .tel:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .mailto:hover,
 .mailto:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .tel {
-  color: #757575;
+  color: var(--primary-text-color);
 }
 .mailto {
-  color: #757575;
-}
-
-.mailto-footer:hover,
-.mailto-footer:focus {
-  color: #2196f3;
-}
-
-.tel-footer:hover,
-.tel-footer:focus {
-  color: #2196f3;
-}
-
-.tel-footer {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.mailto-footer {
-  color: rgba(255, 255, 255, 0.6);
-}
-.maps {
-  color: #ffffff;
-}
-.maps:hover,
-.maps:focus {
-  color: #2196f3;
+  color: var(--primary-text-color);
 }
 
 .hidden-h2 {
   display: none;
 }
 
-.hidden-header {
-  display: none;
+/* -------------------------------------------------------------------ФУТЕР----------------------------------------------------------------*/
+footer {
+  background: var(--fluoric-background-color);
 }
 
 .contacts-footer {
-  width: 231px;
-  height: 21px;
-  left: 215px;
   font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+}
+.mailto-footer:hover,
+.mailto-footer:focus {
+  color: var(--accent-color);
+}
+.mailto-footer {
+  color: var(--footer-contacts-color);
 }
 
-footer {
-  background: #2f303a;
-  width: 1600px;
-  height: 252px;
-  left: 0px;
-  top: 1628px;
+.tel-footer:hover,
+.tel-footer:focus {
+  color: var(--accent-color);
+}
+
+.tel-footer {
+  color: var(--footer-contacts-color);
+  text-decoration: none;
+}
+
+.maps {
+  color: var(--white-color);
+}
+.maps:hover,
+.maps:focus {
+  color: var(--accent-color);
 }
