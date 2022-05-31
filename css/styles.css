@@ -115,6 +115,7 @@ ul {
 }
 /* ---------------------------------------------------------------КНОПКА ЗАКАЗАТЬ УСЛУГУ------------------------------------------------ */
 .issue {
+  font-family: inherit;
   background: var(--accent-color);
   cursor: pointer;
   color: var(--white-color);
@@ -178,6 +179,7 @@ ul {
 /* -------------------------------------------------------------------КНОПКА РАЗДЕЛ "ВСЕ"---------------------------------------------- */
 
 .all {
+  font-family: inherit;
   background: var(--fone-comand-color);
   color: var(--title-text-color);
   line-height: 1.62;
@@ -193,6 +195,7 @@ ul {
 }
 /* -----------------------------------------------------------------КНОПКА РАЗДЕЛ "ВЕБ-САЙТЫ"---------------------------------------------- */
 .web-sites {
+  font-family: inherit;
   background: var(--fone-comand-color);
   color: var(--title-text-color);
   border-radius: 4px;
@@ -209,6 +212,7 @@ ul {
 
 /* ------------------------------------------------------------------КНОПКА РАЗДЕЛ "ПРИЛОЖЕНИЕ"--------------------------------------------------- */
 .applications {
+  font-family: inherit;
   background: var(--fone-comand-color);
   color: var(--title-text-color);
   border-radius: 4px;
@@ -224,6 +228,7 @@ ul {
 }
 /* -----------------------------------------------------------------КНОПКА РАЗДЕЛ "ДИЗАЙН"-------------------------------------------------------- */
 .design {
+  font-family: inherit;
   background: var(--fone-comand-color);
   color: var(--title-text-color);
   border-radius: 4px;
@@ -239,6 +244,7 @@ ul {
 }
 /* ----------------------------------------------------------------КНОПКА РАЗДЕЛ "МАРКЕТИНГ"---------------------------------------------------------- */
 .marketing {
+  font-family: inherit;
   background: var(--fone-comand-color);
   color: var(--title-text-color);
   border-radius: 4px;
@@ -259,17 +265,15 @@ ul {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  font-weight: 500;
-  font-size: 16px;
 }
-
-a {
-  color: var(--title-text-color);
+name-project a {
+  font-family: inherit;
   text-decoration: none;
 }
 .project {
   font-size: 16px;
   line-height: 1.88;
+  color: var(--primary-text-color);
 }
 
 /* -----------------------------------------------------------------------КОНТАКТЫ------------------------------------------------------------------------------- */
